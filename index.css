@@ -1,0 +1,240 @@
+body {
+    font-family: "Space Mono", Arial, Helvetica, sans-serif;
+    background: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+    text-align: center;
+    max-width: 520px; 
+    min-width: 320px; 
+    display: block;
+    margin: auto}
+
+.header{
+  letter-spacing: 5px; 
+  margin: 20px 0px;
+  color: hsl(183, 100%, 15%)}
+
+.spli-header, .tter-header{
+    margin: 0px;
+    padding: 0px}
+
+input{
+    border: none;
+    font-family: "Space Mono", Arial, Helvetica, sans-serif;
+    padding: 5px 5px 5px 24px;
+    border-radius: 5px}
+
+.app-container{
+    display: flex;
+    flex-direction: row; 
+    padding: 20px;
+    gap: 20px;
+    border-radius: 5px}
+
+.container-left{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start}
+
+.container-left>input{
+    width: 85%}
+
+.container-right{
+    padding: 0px 40px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px}
+
+.container-right-div{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center}
+
+.container-right-div-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start}
+
+.tip-amount-text{
+    margin: 0px; 
+    padding: 0px}
+
+.per-person-text{
+    margin: 0px;
+    padding: 0px}
+
+.total-text{
+    margin: 0px;
+    padding: 0px}
+
+.people-input-text-div, .bill-input-text-div{
+    display: flex; 
+    width: 100%;
+    justify-content: space-between;
+    align-items: center}
+
+/*BUTTONS*/
+
+button{
+    border: none;
+    border-radius: 5px; 
+    font-family: "Space Mono", Arial, Helvetica, sans-serif;
+    cursor: pointer}
+
+.btn-tip{
+   padding: 5px 0px}
+
+.btn-tip:hover{
+    background-color: hsl(172, 67%, 45%); 
+    color: hsl(183, 100%, 15%)}
+
+.buttons-container{
+    display: grid;
+    grid-template-columns: 4.2em 4.2em 4.2em;
+    row-gap: .3em;
+    column-gap: .6em;
+    margin-bottom: 10px}
+
+.buttons-container>input{
+    text-align: center;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer}
+
+#reset-btn{
+    padding: 7px 50px;
+    margin-bottom: 15px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700}
+
+#reset-btn:hover{
+    background-color: hsl(185, 41%, 84%)}
+
+/*WARNINGS*/
+#bill-zero-warning, #people-zero-warning{
+    color: red; 
+    margin: 0px;
+    padding: 0px}
+
+/*COLORS*/
+.white-background{
+    background-color: hsl(0, 0%, 100%)}
+
+.white-text{
+    color: hsl(0, 0%, 100%)}
+
+.very-light-grayish-cyan-background{
+    background-color: hsl(189, 41%, 97%)}
+    
+.grayish-cyan-text{
+    color: hsl(184, 14%, 56%)}
+    
+.strong-cyan-background{
+    background-color: hsl(172, 67%, 45%)}
+    
+.strong-cyan-text{
+    color: hsl(172, 67%, 45%)}
+
+.dark-grayish-cyan-text{
+    color: hsl(186, 14%, 43%)}
+.very-dark-cyan-background{
+    background: hsl(183, 100%, 15%)}
+    
+/*FONT-WEIGHT*/
+.font-weight{
+    font-weight: 700}
+
+/*FONT SIZE*/
+.font-small{
+    font-size: 12px}
+
+/*BORDERS*/
+.red-border{
+    border: 2px solid red}
+    
+.blue-border{
+    border: 2px solid hsl(172, 67%, 45%)}
+
+/*SVG & ICONS*/
+.svg-dollar, .svg-person{
+    position: relative; 
+    right: -8px;
+    top: -24px}
+
+#percent-icon{
+    display: none;
+    position: relative;
+    left: 175px;
+    bottom: 18px;
+    margin: -10px;
+    padding: 0px}
+
+/*DISABLE INPUT ARROWS*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+    body { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center}
+
+    .app-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px 20px}
+        
+    .container-right{
+        padding: 20px 40px}
+    
+    input{
+        padding: 7px 0px}  
+    
+    #bill-input, #people-input{
+        width: 250px;
+        padding-left: 27px}
+    
+    #people-input{
+        margin-bottom: -15px}
+    
+    .buttons-container{
+        display: grid;
+        grid-template-columns: 8.2em 8.2em ;
+        row-gap: .3em;
+        column-gap: .6em;
+        margin-bottom: 10px}
+        
+    .btn-tip{
+        padding: 7px 0px}
+    
+    .buttons-container>input{
+        text-align: center}
+    
+    .svg-person{ 
+        right: -10px;
+        top: -12px}
+    
+    .svg-dollar{
+        right: -10px;
+        top: -26px}
+         
+    .container-right{
+        width: 70%}
+}
