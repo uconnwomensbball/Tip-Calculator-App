@@ -52,8 +52,8 @@ customInput.addEventListener("input", function(){
 })
 
 function calculateTip(tip){
-    let bill = parseInt(billInput.value)
-    let people = parseInt(peopleInput.value)
+    let bill = parseFloat(billInput.value)
+    let people = parseFloat(peopleInput.value)
     if (billInput.value && peopleInput.value >=1){
         tipResultEl.textContent = `$${((bill * tip)/(people)).toFixed(2)}`
         totalResultEl.textContent = `$${(((bill * tip) + bill)/people).toFixed(2)}`}
