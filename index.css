@@ -6,7 +6,8 @@ body {
     max-width: 520px; 
     min-width: 320px; 
     display: block;
-    margin: auto}
+    margin: auto; 
+    border-radius: 5px}
 
 .header{
   letter-spacing: 5px; 
@@ -41,7 +42,7 @@ input{
 
 .container-right{
     padding: 0px 40px;
-    border-radius: 7px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
